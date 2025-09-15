@@ -1,37 +1,368 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre mí - Portafolio</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí - Mi Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Sobre mí</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="about.html" class="active">Sobre mí</a>
-      <a href="projects.html">Proyectos</a>
-      <a href="contact.html">Contacto</a>
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">&lt;/dev&gt;</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="about.html" class="nav-link active">Sobre Mí</a>
+                <a href="projects.html" class="nav-link">Proyectos</a>
+                <a href="contact.html" class="nav-link">Contacto</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>Hola, soy David 👨‍💻</h2>
-      <p>
-        Soy ingeniero en computación con interés en desarrollo web, software y proyectos creativos.
-        Me gusta aprender nuevas tecnologías y aplicarlas en proyectos prácticos.
-      </p>
-      <p>
-        Este portafolio lo uso para mostrar mis proyectos, habilidades y mi camino profesional.
-      </p>
+    <!-- Hero Section About -->
+    <section class="hero-section about-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="name">Sobre Mí</span>
+                        <span class="title">Mi Historia y Experiencia</span>
+                    </h1>
+                    <p class="hero-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>© 2025 David Espinoza - Todos los derechos reservados</p>
-  </footer>
+    <!-- Sección de Experiencia -->
+    <section class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Presente</div>
+                        <h3>Desarrollador Full Stack Senior</h3>
+                        <h4>Empresa Tecnológica S.A.</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        <div class="timeline-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <h3>Desarrollador Frontend</h3>
+                        <h4>StartUp Innovadora</h4>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                        cupidatat non proident.</p>
+                        <div class="timeline-tags">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">SASS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2022</div>
+                        <h3>Desarrollador Junior</h3>
+                        <h4>Agencia Digital</h4>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                        accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <div class="timeline-tags">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Habilidades -->
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React.js</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS/SASS</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MongoDB</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Herramientas</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Docker</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AWS</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Educación y Certificaciones -->
+    <section class="education-section">
+        <div class="container">
+            <div class="education-content">
+                <div class="education-column">
+                    <h2 class="section-title">Educación</h2>
+                    <div class="education-item">
+                        <div class="education-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="education-info">
+                            <h3>Ingeniería en Sistemas</h3>
+                            <h4>Universidad Tecnológica</h4>
+                            <p class="education-date">2018 - 2022</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="education-info">
+                            <h3>Bootcamp Full Stack</h3>
+                            <h4>Coding Academy</h4>
+                            <p class="education-date">2021</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                            cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-column">
+                    <h2 class="section-title">Certificaciones</h2>
+                    <div class="certification-grid">
+                        <div class="certification-item">
+                            <div class="cert-image">
+                                <div class="image-placeholder">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <h4>AWS Solutions Architect</h4>
+                                <p>Amazon Web Services</p>
+                                <span class="cert-date">2023</span>
+                            </div>
+                        </div>
+
+                        <div class="certification-item">
+                            <div class="cert-image">
+                                <div class="image-placeholder">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <h4>React Developer</h4>
+                                <p>Meta (Facebook)</p>
+                                <span class="cert-date">2022</span>
+                            </div>
+                        </div>
+
+                        <div class="certification-item">
+                            <div class="cert-image">
+                                <div class="image-placeholder">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <h4>Node.js Specialist</h4>
+                                <p>Node.js Foundation</p>
+                                <span class="cert-date">2022</span>
+                            </div>
+                        </div>
+
+                        <div class="certification-item">
+                            <div class="cert-image">
+                                <div class="image-placeholder">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <h4>Cloud Engineer</h4>
+                                <p>Google Cloud</p>
+                                <span class="cert-date">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Intereses -->
+    <section class="interests-section">
+        <div class="container">
+            <h2 class="section-title">Intereses y Pasatiempos</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Open Source</h3>
+                    <p>Contribuyo activamente a proyectos de código abierto y mantengo varios repositorios en GitHub.</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Gaming</h3>
+                    <p>Desarrollo de juegos indie como hobby y participación en game jams.</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-mountain"></i>
+                    <h3>Montañismo</h3>
+                    <p>Senderismo y escalada en montaña como forma de desconectar y mantenerme activo.</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-camera"></i>
+                    <h3>Fotografía</h3>
+                    <p>Fotografía de paisajes y street photography, especialmente con técnicas de larga exposición.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

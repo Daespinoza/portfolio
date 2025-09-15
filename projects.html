@@ -1,44 +1,402 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyectos - Portafolio</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Mi Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Mis Proyectos</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="about.html">Sobre mí</a>
-      <a href="projects.html" class="active">Proyectos</a>
-      <a href="contact.html">Contacto</a>
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">&lt;/dev&gt;</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="about.html" class="nav-link">Sobre Mí</a>
+                <a href="projects.html" class="nav-link active">Proyectos</a>
+                <a href="contact.html" class="nav-link">Contacto</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>Proyectos destacados</h2>
-      <ul>
-        <li>
-          <strong>Proyecto 1:</strong> Página web de ejemplo con HTML, CSS y JS.
-          <br><a href="#">Ver proyecto</a>
-        </li>
-        <li>
-          <strong>Proyecto 2:</strong> Aplicación pequeña en Python con Flask.
-          <br><a href="#">Ver proyecto</a>
-        </li>
-        <li>
-          <strong>Proyecto 3:</strong> Juego simple con JavaScript.
-          <br><a href="#">Ver proyecto</a>
-        </li>
-      </ul>
+    <!-- Hero Section Projects -->
+    <section class="hero-section projects-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="name">Mis Proyectos</span>
+                        <span class="title">Portafolio de Desarrollo</span>
+                    </h1>
+                    <p class="hero-description">
+                        Una colección de mis trabajos más destacados, desde aplicaciones web 
+                        hasta soluciones backend complejas. Cada proyecto representa un desafío 
+                        único y una oportunidad de aprendizaje.
+                    </p>
+                    <div class="projects-filter">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="web">Web Apps</button>
+                        <button class="filter-btn" data-filter="mobile">Mobile</button>
+                        <button class="filter-btn" data-filter="backend">Backend</button>
+                        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>© 2025 David Espinoza - Todos los derechos reservados</p>
-  </footer>
+    <!-- Sección de Proyectos Destacados -->
+    <section class="projects-showcase">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="showcase-grid">
+                <!-- Proyecto Principal -->
+                <div class="showcase-main project-item" data-category="fullstack">
+                    <div class="showcase-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3>E-Commerce Platform</h3>
+                                <p>Plataforma completa de comercio electrónico con sistema de pagos, gestión de inventario y panel de administración.</p>
+                                <div class="overlay-links">
+                                    <a href="#" class="overlay-link"><i class="fab fa-github"></i> GitHub</a>
+                                    <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-content">
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyectos Secundarios -->
+                <div class="showcase-secondary">
+                    <div class="project-item" data-category="web">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Dashboard Analytics</h3>
+                            <p>Dashboard interactivo para visualización de datos y métricas de negocio en tiempo real.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-category="mobile">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Manager App</h3>
+                            <p>Aplicación móvil para gestión de tareas con sincronización en la nube y notificaciones push.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Redux</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Proyectos -->
+    <section class="projects-gallery">
+        <div class="container">
+            <h2 class="section-title">Todos los Proyectos</h2>
+            <div class="projects-grid" id="projects-grid">
+                <div class="project-card project-item" data-category="web">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-links">
+                                    <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blog Personal</h3>
+                        <p>Blog desarrollado con JAMstack para compartir artículos técnicos y tutoriales.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Gatsby</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">Markdown</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card project-item" data-category="backend">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-links">
+                                    <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>REST API Generator</h3>
+                        <p>Herramienta CLI para generar APIs RESTful con documentación automática y testing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Swagger</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> NPM
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card project-item" data-category="web">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-links">
+                                    <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Design System</h3>
+                        <p>Sistema de diseño completo con componentes reutilizables y documentación interactiva.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Storybook</span>
+                            <span class="tech-tag">SCSS</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Storybook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card project-item" data-category="fullstack">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-links">
+                                    <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Social Network</h3>
+                        <p>Red social para desarrolladores con sistema de posts, comentarios y chat en tiempo real.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card project-item" data-category="mobile">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-links">
+                                    <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Photo Editor</h3>
+                        <p>Editor de fotos móvil con filtros, efectos y herramientas de edición avanzadas.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">OpenCV</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Play Store
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card project-item" data-category="backend">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-links">
+                                    <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Chatbot</h3>
+                        <p>Chatbot inteligente con procesamiento de lenguaje natural para atención al cliente.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> API
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Estadísticas -->
+    <section class="project-stats">
+        <div class="container">
+            <h2 class="section-title">En Números</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Proyectos Completados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Clientes Satisfechos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-number">2000+</div>
+                    <div class="stat-label">Horas de Código</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Repositorios</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
