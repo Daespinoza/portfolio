@@ -188,49 +188,46 @@ function animateCounter(element) {
 // ===========================================
 // EFECTO DE ESCRITURA
 // ===========================================
-function initTypingEffect() {
+/*
+function initTickerEffect() {
     const titleElement = document.querySelector('.hero-title .title');
     if (!titleElement) return;
-    
+
     const titles = [
-        'Desarrollador Full Stack',
-        'Frontend Developer',
-        'Backend Developer',
-        'Web Developer'
+        'Ingeniero en Computación',
+        'Bachiller en Ingeniería',
+        'Desarrollador Backend',
+        'Especialista en Java y C#',
+        'Full Stack Developer',
+        'Data & AI Enthusiast',
+        'Web Developer',
+        'Problem Solver'
     ];
-    
-    let titleIndex = 0;
+
+    let index = 0;
+    let text = '';
     let charIndex = 0;
-    let isDeleting = false;
-    
-    function typeEffect() {
-        const currentTitle = titles[titleIndex];
-        
-        if (isDeleting) {
-            titleElement.textContent = currentTitle.substring(0, charIndex - 1);
-            charIndex--;
+
+    function typeNextChar() {
+        text = titles[index];
+        titleElement.textContent = text.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex < text.length) {
+            setTimeout(typeNextChar, 100); // velocidad de tipeo
         } else {
-            titleElement.textContent = currentTitle.substring(0, charIndex + 1);
-            charIndex++;
+            setTimeout(() => {
+                charIndex = 0;
+                index = (index + 1) % titles.length;
+                typeNextChar();
+            }, 2000); // pausa antes de pasar al siguiente
         }
-        
-        let typeSpeed = isDeleting ? 50 : 100;
-        
-        if (!isDeleting && charIndex === currentTitle.length) {
-            typeSpeed = 2000; // Pausa al completar
-            isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            titleIndex = (titleIndex + 1) % titles.length;
-            typeSpeed = 500; // Pausa antes de escribir siguiente
-        }
-        
-        setTimeout(typeEffect, typeSpeed);
     }
-    
-    // Iniciar después de 1 segundo
-    setTimeout(typeEffect, 1000);
+
+    typeNextChar();
 }
+*/
+
 
 // ===========================================
 // SCROLL SUAVE
@@ -260,11 +257,20 @@ function initSmoothScroll() {
     // Scroll suave para el botón de scroll indicator
     const scrollIndicator = document.querySelector('.scroll-indicator');
     if (scrollIndicator) {
+        
         scrollIndicator.addEventListener('click', function() {
             window.scrollTo({
                 top: window.innerHeight,
                 behavior: 'smooth'
             });
+        });
+
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 200) {
+                scrollIndicator.classList.add('hidden');
+            } else {
+                scrollIndicator.classList.remove('hidden');
+            }
         });
     }
 }
