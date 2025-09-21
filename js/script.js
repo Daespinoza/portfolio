@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initMobileMenu();
     initScrollEffects();
     initAnimations();
-    initTypingEffect();
+    initTickerEffect();
     initSmoothScroll();
     initThemeToggle();
     initContactForm();
@@ -188,9 +188,9 @@ function animateCounter(element) {
 // ===========================================
 // EFECTO DE ESCRITURA
 // ===========================================
-/*
+
 function initTickerEffect() {
-    const titleElement = document.querySelector('.hero-title .title');
+    const titleElement = document.getElementById('typing-text');
     if (!titleElement) return;
 
     const titles = [
@@ -207,26 +207,45 @@ function initTickerEffect() {
     let index = 0;
     let text = '';
     let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
+    let deleteSpeed = 50;
+    let pauseTime = 2000;
 
-    function typeNextChar() {
-        text = titles[index];
-        titleElement.textContent = text.substring(0, charIndex + 1);
-        charIndex++;
-
-        if (charIndex < text.length) {
-            setTimeout(typeNextChar, 100); // velocidad de tipeo
+    function type() {
+        const current = index % titles.length;
+        const fullText = titles[current];
+        
+        if (isDeleting) {
+            // Eliminar caracter
+            text = fullText.substring(0, text.length - 1);
         } else {
-            setTimeout(() => {
-                charIndex = 0;
-                index = (index + 1) % titles.length;
-                typeNextChar();
-            }, 2000); // pausa antes de pasar al siguiente
+            // Escribir caracter
+            text = fullText.substring(0, text.length + 1);
         }
+        
+        titleElement.textContent = text;
+        
+        let speed = isDeleting ? deleteSpeed : typingSpeed;
+        
+        if (!isDeleting && text === fullText) {
+            // Pausa al finalizar escritura
+            speed = pauseTime;
+            isDeleting = true;
+        } else if (isDeleting && text === '') {
+            // Cambiar al siguiente texto
+            isDeleting = false;
+            index++;
+            speed = 500;
+        }
+        
+        setTimeout(type, speed);
     }
 
-    typeNextChar();
+    // Iniciar el efecto
+    setTimeout(type, 1000);
 }
-*/
+
 
 
 // ===========================================
