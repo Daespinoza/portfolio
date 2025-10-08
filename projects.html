@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos - Mi Portfolio</title>
+    <title>Proyectos - David Espinoza</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,19 +38,19 @@
                 <div class="hero-text">
                     <h1 class="hero-title">
                         <span class="name">Mis Proyectos</span>
-                        <span class="title">Portafolio de Desarrollo</span>
+                        <span class="title">Portafolio</span>
                     </h1>
                     <p class="hero-description">
                         Una colección de mis trabajos más destacados, desde aplicaciones web 
                         hasta soluciones backend complejas. Cada proyecto representa un desafío 
-                        único y una oportunidad de aprendizaje.
+                        único y una oportunidad de aprendizaje continuo.
                     </p>
                     <div class="projects-filter">
                         <button class="filter-btn active" data-filter="all">Todos</button>
                         <button class="filter-btn" data-filter="web">Web Apps</button>
-                        <button class="filter-btn" data-filter="mobile">Mobile</button>
-                        <button class="filter-btn" data-filter="backend">Backend</button>
-                        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                        <button class="filter-btn" data-filter="java">Java</button>
+                        <button class="filter-btn" data-filter="python">Python</button>
+                        <button class="filter-btn" data-filter="learning">Aprendizaje</button>
                     </div>
                 </div>
             </div>
@@ -62,16 +62,16 @@
         <div class="container">
             <h2 class="section-title">Proyectos Destacados</h2>
             <div class="showcase-grid">
-                <!-- Proyecto Principal -->
+                <!-- Proyecto Principal (50%) -->
                 <div class="showcase-main project-item" data-category="fullstack">
                     <div class="showcase-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-shopping-cart"></i>
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-shopping-cart" style="font-size: 4em; color: white;"></i>
                         </div>
                         <div class="project-overlay">
                             <div class="overlay-content">
                                 <h3>E-Commerce Platform</h3>
-                                <p>Plataforma completa de comercio electrónico con sistema de pagos, gestión de inventario y panel de administración.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                                 <div class="overlay-links">
                                     <a href="#" class="overlay-link"><i class="fab fa-github"></i> GitHub</a>
                                     <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i> Demo</a>
@@ -79,31 +79,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="showcase-content">
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="project-tech">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">Node.js</span>
                             <span class="tech-tag">MongoDB</span>
                             <span class="tech-tag">Stripe</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Proyectos Secundarios -->
+                <!-- Proyectos Secundarios (25% cada uno) -->
                 <div class="showcase-secondary">
-                    <div class="project-item" data-category="web">
+                    <div class="project-item" data-category="mobile">
                         <div class="project-image">
-                            <div class="image-placeholder">
-                                <i class="fas fa-chart-bar"></i>
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                <i class="fas fa-mobile-alt" style="font-size: 2.5em; color: white;"></i>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3>Dashboard Analytics</h3>
-                            <p>Dashboard interactivo para visualización de datos y métricas de negocio en tiempo real.</p>
+                            <h3>Task Manager App</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
                             <div class="project-tech">
-                                <span class="tech-tag">Vue.js</span>
-                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">React Native</span>
                                 <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Redux</span>
                             </div>
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
@@ -112,19 +119,19 @@
                         </div>
                     </div>
 
-                    <div class="project-item" data-category="mobile">
+                    <div class="project-item" data-category="ai">
                         <div class="project-image">
-                            <div class="image-placeholder">
-                                <i class="fas fa-mobile-alt"></i>
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                                <i class="fas fa-robot" style="font-size: 2.5em; color: white;"></i>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3>Task Manager App</h3>
-                            <p>Aplicación móvil para gestión de tareas con sincronización en la nube y notificaciones push.</p>
+                            <h3>AI Chat Assistant</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
                             <div class="project-tech">
-                                <span class="tech-tag">React Native</span>
-                                <span class="tech-tag">Firebase</span>
-                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">OpenAI API</span>
                             </div>
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
@@ -142,30 +149,32 @@
         <div class="container">
             <h2 class="section-title">Todos los Proyectos</h2>
             <div class="projects-grid" id="projects-grid">
+                <!-- Writing Blog -->
                 <div class="project-card project-item" data-category="web">
                     <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-blog"></i>
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-pen-fancy" style="font-size: 2.5em; color: white;"></i>
                         </div>
                         <div class="project-overlay">
                             <div class="overlay-content">
                                 <div class="overlay-links">
-                                    <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/Daespinoza/-writing-blog" class="overlay-link" target="_blank"><i class="fab fa-github"></i></a>
                                     <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Blog Personal</h3>
-                        <p>Blog desarrollado con JAMstack para compartir artículos técnicos y tutoriales.</p>
+                        <h3>Writing Blog</h3>
+                        <p>Blog personal de escritura creativa con sistema avanzado de filtros, búsqueda y categorización de relatos literarios.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Gatsby</span>
-                            <span class="tech-tag">GraphQL</span>
-                            <span class="tech-tag">Markdown</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Responsive</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">
+                            <a href="https://github.com/Daespinoza/-writing-blog" class="project-link" target="_blank">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
                             <a href="#" class="project-link">
@@ -175,166 +184,141 @@
                     </div>
                 </div>
 
-                <div class="project-card project-item" data-category="backend">
+                <!-- CS50 AI Python -->
+                <div class="project-card project-item" data-category="python">
                     <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-server"></i>
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #3776AB 0%, #306998 100%);">
+                            <i class="fab fa-python" style="font-size: 2.5em; color: #FFD43B;"></i>
                         </div>
                         <div class="project-overlay">
                             <div class="overlay-content">
                                 <div class="overlay-links">
-                                    <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
-                                    <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/Daespinoza/cs50-ai-intro" class="overlay-link" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="overlay-link"><i class="fas fa-book"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>REST API Generator</h3>
-                        <p>Herramienta CLI para generar APIs RESTful con documentación automática y testing.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">Swagger</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> NPM
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card project-item" data-category="web">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-links">
-                                    <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
-                                    <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Design System</h3>
-                        <p>Sistema de diseño completo con componentes reutilizables y documentación interactiva.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Storybook</span>
-                            <span class="tech-tag">SCSS</span>
-                            <span class="tech-tag">TypeScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Storybook
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card project-item" data-category="fullstack">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-links">
-                                    <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
-                                    <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Social Network</h3>
-                        <p>Red social para desarrolladores con sistema de posts, comentarios y chat en tiempo real.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Socket.io</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card project-item" data-category="mobile">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-camera"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-links">
-                                    <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
-                                    <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Photo Editor</h3>
-                        <p>Editor de fotos móvil con filtros, efectos y herramientas de edición avanzadas.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Dart</span>
-                            <span class="tech-tag">OpenCV</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Play Store
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card project-item" data-category="backend">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-links">
-                                    <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
-                                    <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>AI Chatbot</h3>
-                        <p>Chatbot inteligente con procesamiento de lenguaje natural para atención al cliente.</p>
+                        <h3>CS50 AI - Python</h3>
+                        <p>Curso de Inteligencia Artificial de Harvard: implementaciones de algoritmos y resúmenes técnicos de conceptos avanzados de IA.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Algoritmos</span>
+                            <span class="tech-tag">IA</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">
+                            <a href="https://github.com/Daespinoza/cs50-ai-intro" class="project-link" target="_blank">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
                             <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> API
+                                <i class="fas fa-book"></i> Resúmenes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swin Control -->
+                <div class="project-card project-item" data-category="java">
+                    <div class="project-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #5382A1 0%, #0D8AC4 100%);">
+                            <i class="fab fa-java" style="font-size: 2.5em; color: #FFFFFF;"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-links">
+                                    <a href="https://github.com/Daespinoza/Swin-Control-JavaMongo" class="overlay-link" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="overlay-link"><i class="fas fa-tasks"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Swin Control</h3>
+                        <p>Sistema de gestión integral para escuelas de natación. Control de horarios, asistencia, pagos y reportes administrativos.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Sistema Gestión</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Daespinoza/Swin-Control-JavaMongo" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-tasks"></i> En Desarrollo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LabSanAnt Java Mongo -->
+                <div class="project-card project-item" data-category="java">
+                    <div class="project-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);">
+                            <i class="fas fa-flask" style="font-size: 2.5em; color: white;"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-links">
+                                    <a href="https://github.com/Daespinoza/LabSanAnt-JavaMongo" class="overlay-link" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="overlay-link"><i class="fas fa-tasks"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>LabSanAnt - Java Mongo</h3>
+                        <p>Sistema de gestión para laboratorios con control de inventario, pacientes y resultados. Arquitectura backend robusta con Java y MongoDB.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Spring Framework</span>
+                            <span class="tech-tag">Sistema Gestión</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Daespinoza/LabSanAnt-JavaMongo" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-tasks"></i> En Desarrollo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Códigos de Bolsillo -->
+                <div class="project-card project-item" data-category="learning">
+                    <div class="project-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">
+                            <i class="fas fa-code" style="font-size: 2.5em; color: white;"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-links">
+                                    <a href="https://github.com/Daespinoza/Codigos-de-Bolsillo" class="overlay-link" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="overlay-link"><i class="fas fa-book-open"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Códigos de Bolsillo</h3>
+                        <p>Compendio de códigos y ejemplos de diferentes lenguajes de programación. Recursos de aprendizaje y referencia rápida para desarrollo.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Multi-lenguaje</span>
+                            <span class="tech-tag">Ejemplos</span>
+                            <span class="tech-tag">Aprendizaje</span>
+                            <span class="tech-tag">Referencia</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Daespinoza/Codigos-de-Bolsillo" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-book-open"></i> Ejemplos
                             </a>
                         </div>
                     </div>
@@ -343,7 +327,7 @@
         </div>
     </section>
 
-    <!-- Sección de Estadísticas -->
+    <!-- Sección de Estadísticas Actualizada -->
     <section class="project-stats">
         <div class="container">
             <h2 class="section-title">En Números</h2>
@@ -352,29 +336,29 @@
                     <div class="stat-icon">
                         <i class="fas fa-code-branch"></i>
                     </div>
-                    <div class="stat-number">25+</div>
-                    <div class="stat-label">Proyectos Completados</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Clientes Satisfechos</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <div class="stat-number">2000+</div>
-                    <div class="stat-label">Horas de Código</div>
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Proyectos Activos</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-icon">
                         <i class="fab fa-github"></i>
                     </div>
-                    <div class="stat-number">100+</div>
+                    <div class="stat-number">15+</div>
                     <div class="stat-label">Repositorios</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Lenguajes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Cursos Activos</div>
                 </div>
             </div>
         </div>
@@ -385,13 +369,21 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-text">
-                    <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+                    <p>&copy; 2025 David Espinoza. Todos los derechos reservados.</p>
                 </div>
                 <div class="footer-social">
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/Daespinoza" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/david-jose-espinoza-soto-8a29a5330"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="LinkedIn — David José Espinoza Soto"
+                        aria-label="LinkedIn — David José Espinoza Soto">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.2 8.98h4.6V24H.2V8.98zM8.98 8.98h4.4v2.06h.06c.61-1.16 2.1-2.39 4.32-2.39 4.62 0 5.47 3.04 5.47 6.99V24h-4.6v-7.24c0-1.73-.03-3.95-2.41-3.95-2.41 0-2.78 1.88-2.78 3.82V24H8.98V8.98z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:dev.daespinoza@proton.me" class="social-link"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>

@@ -470,7 +470,7 @@ body {
 }
 
 .project-content p {
-    color: rgba(248, 250, 252, 0.8);
+    color: var(--text-dark);
     margin-bottom: var(--spacing-md);
     line-height: 1.6;
 }
