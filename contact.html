@@ -64,25 +64,7 @@
                     </div>
                     <h3>Email</h3>
                     <p>dev.daespinoza@proton.me</p>
-                    <a href="mailto:dev.daespinoza@proton.me" class="contact-link">Enviar Email</a>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <h3>Teléfono</h3>
-                    <p>+506 1234-5678</p>
-                    <a href="tel:+50612345678" class="contact-link">Llamar</a>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Ubicación</h3>
-                    <p>San José, Costa Rica</p>
-                    <a href="#" class="contact-link">Ver Mapa</a>
+                    <a href="#" class="contact-link">Enviar Email</a>
                 </div>
 
                 <div class="contact-item">
@@ -103,7 +85,7 @@
             <div class="contact-content">
                 <div class="form-section">
                     <h2 class="section-title">Envíame un Mensaje</h2>
-                    <form class="contact-form" id="contact-form">
+                    <form class="contact-form" id="contact-form" name="contact" netlify>
                         <div class="form-group">
                             <label for="name">Nombre Completo</label>
                             <input type="text" id="name" name="name" required>
@@ -118,33 +100,16 @@
                             <label for="subject">Asunto</label>
                             <select id="subject" name="subject" required>
                                 <option value="">Selecciona un asunto</option>
-                                <option value="web-development">Desarrollo Web</option>
-                                <option value="mobile-development">Desarrollo Móvil</option>
-                                <option value="consulting">Consultoría</option>
-                                <option value="collaboration">Colaboración</option>
-                                <option value="other">Otro</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="budget">Presupuesto (Opcional)</label>
-                            <select id="budget" name="budget">
-                                <option value="">Selecciona un rango</option>
-                                <option value="under-1000">Menos de $1,000</option>
-                                <option value="1000-5000">$1,000 - $5,000</option>
-                                <option value="5000-10000">$5,000 - $10,000</option>
-                                <option value="10000-plus">Más de $10,000</option>
+                                <option value="consultas">Consulta General</option>
+                                <option value="proyectos">Propuesta de Proyecto</option>
+                                <option value="colaboracion">Colaboración</option>
+                                <option value="otro">Otro</option>
                             </select>
                         </div>
 
                         <div class="form-group">
                             <label for="message">Mensaje</label>
                             <textarea id="message" name="message" rows="6" placeholder="Cuéntame sobre tu proyecto, ideas o cualquier consulta que tengas..." required></textarea>
-                        </div>
-
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox" id="privacy" name="privacy" required>
-                            <label for="privacy">Acepto la <a href="#" class="privacy-link">política de privacidad</a></label>
                         </div>
 
                         <button type="submit" class="btn btn-primary submit-btn">
@@ -246,16 +211,6 @@
 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>¿Cuáles son tus tarifas?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Mis tarifas varían según la complejidad y alcance del proyecto. Ofrezco tanto tarifas por hora como presupuestos fijos. Contacta conmigo para una cotización personalizada.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
                         <h3>¿Trabajas con startups?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
@@ -270,7 +225,7 @@
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Me especializo en el stack MERN (MongoDB, Express, React, Node.js), pero también trabajo con Vue.js, Python, PostgreSQL, y tecnologías cloud como AWS y Firebase.</p>
+                        <p>Me especializo en Java, Python, JavaScript, MongoDB y bases de datos SQL. También tengo experiencia con frameworks como Spring Boot y desarrollo web frontend.</p>
                     </div>
                 </div>
             </div>
@@ -283,7 +238,10 @@
             <div class="cta-content">
                 <h2>¿Listo para comenzar tu proyecto?</h2>
                 <p>Contacta conmigo hoy y convirtamos tu idea en realidad</p>
-                
+                <div class="cta-buttons">
+                    <a href="#contact-form" class="btn btn-outline">Enviar Mensaje</a>
+                    <a href="mailto:dev.daespinoza@proton.me" class="btn btn-secondary">Email Directo</a>
+                </div>
             </div>
         </div>
     </section>
@@ -303,12 +261,11 @@
                         rel="noopener noreferrer"
                         title="LinkedIn — David José Espinoza Soto"
                         aria-label="LinkedIn — David José Espinoza Soto">
-                        <!-- SVG oficial de LinkedIn (pequeño) -->
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.2 8.98h4.6V24H.2V8.98zM8.98 8.98h4.4v2.06h.06c.61-1.16 2.1-2.39 4.32-2.39 4.62 0 5.47 3.04 5.47 6.99V24h-4.6v-7.24c0-1.73-.03-3.95-2.41-3.95-2.41 0-2.78 1.88-2.78 3.82V24H8.98V8.98z"/>
                         </svg>
                     </a>
-                    
+                    <a href="mailto:dev.daespinoza@proton.me" class="social-link"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>

@@ -735,6 +735,10 @@ body {
     padding: var(--spacing-2xl) 0;
 }
 
+.projects-showcase.section-white {
+    display: none;
+}
+
 .showcase-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -1758,6 +1762,10 @@ a:not(.btn):hover {
         opacity: 0;          
         pointer-events: none; 
     }
+
+    .hidden {
+    display: none !important;
+}
     
     .showcase-grid {
         grid-template-columns: 1fr;
